@@ -2,6 +2,10 @@
   .purchase .platinum a, .purchase .premium a, .purchase .head-spa a {
     font-size:0.8em;
   }
+
+  #instafeed a {
+    max-height:200px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -16,12 +20,20 @@
   .section_003 .text_003 h5 {
     line-height: 2em;
     font-size: 0.9em;
-}
+  }
+
+  #instafeed a {
+    max-height:150px;
+  }
 }
 
 @media (max-width:768px) {
   .mobile-profile-image {
     margin:0 auto 2vh;
+  }
+
+  #instafeed a {
+    height:100px;
   }
 
   .testimonials p {
@@ -48,7 +60,7 @@
 
   .stylist-evaluation h5 {
     margin: 3vh 0;
-    font-size:0.9em;
+    font-size:0.8em;
   }
 
   .panel-title {
@@ -78,7 +90,9 @@
 
 /* smartphone view 575px and down */
 @media (max-width: 575.98px) {
-
+    #instafeed a {
+      height:90px;
+    }
     .shop img {
       position: fixed;
       width: 80px;

@@ -19,6 +19,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js/instafeed.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
@@ -91,6 +92,27 @@
 });
 </script>
 
+<script src="js/InstagramFeed.min.js"></script>
+<script>
+    (function(){
+        new InstagramFeed({
+            'username': 'tokioinkarami_report',
+            'container': document.getElementById("instagram-feed1"),
+            'display_profile': true,
+            'display_biography': true,
+            'display_gallery': true,
+            // 'display_captions': true,
+            'callback': null,
+            'styling': true,
+            'items': 8,
+            'items_per_row': 4,
+            'margin': 1,
+            'lazy_load': true,
+            'on_error': console.error
+        });
+    })();
+</script>
+
 
 
 </head>
@@ -133,8 +155,32 @@
             <h3>#tokioinkarami #tokioトリートメント #トキオトリートメント</h3>
           </div>
 
-           <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-          <div class="elfsight-app-efe6c746-09d1-4ab1-b3b2-5ce17359fa4a"></div> 
+          <!-- <div class="instagram_gallery row">
+            <a href="https://www.instagram.com/p/CHdjJ0yM3eB" class="instagram-image col-3" rel="noopener" target="_blank"><img loading="lazy" src="https://scontent-lax3-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/c0.168.1348.1348a/s640x640/124372782_404101680973676_7356675722273924471_n.jpg?_nc_ht=scontent-lax3-1.cdninstagram.com&amp;_nc_cat=1&amp;_nc_ohc=kjIl0Ux2i3wAX-8TLaW&amp;_nc_tp=24&amp;oh=65b49868f65ee5253e859e445f7c7c68&amp;oe=5FD58002" alt="" style="width:100%;"></a>
+            <a href="https://www.instagram.com/p/CHdjJ0yM3eB" class="instagram-image col-3" rel="noopener" target="_blank"><img loading="lazy" src="https://scontent-lax3-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/c0.168.1348.1348a/s640x640/124372782_404101680973676_7356675722273924471_n.jpg?_nc_ht=scontent-lax3-1.cdninstagram.com&amp;_nc_cat=1&amp;_nc_ohc=kjIl0Ux2i3wAX-8TLaW&amp;_nc_tp=24&amp;oh=65b49868f65ee5253e859e445f7c7c68&amp;oe=5FD58002" alt="" style="width:100%;"></a>
+            <a href="https://www.instagram.com/p/CHdjJ0yM3eB" class="instagram-image col-3" rel="noopener" target="_blank"><img loading="lazy" src="https://scontent-lax3-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/c0.168.1348.1348a/s640x640/124372782_404101680973676_7356675722273924471_n.jpg?_nc_ht=scontent-lax3-1.cdninstagram.com&amp;_nc_cat=1&amp;_nc_ohc=kjIl0Ux2i3wAX-8TLaW&amp;_nc_tp=24&amp;oh=65b49868f65ee5253e859e445f7c7c68&amp;oe=5FD58002" alt="" style="width:100%;"></a>
+            <a href="https://www.instagram.com/p/CHdjJ0yM3eB" class="instagram-image col-3" rel="noopener" target="_blank"><img loading="lazy" src="https://scontent-lax3-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/c0.168.1348.1348a/s640x640/124372782_404101680973676_7356675722273924471_n.jpg?_nc_ht=scontent-lax3-1.cdninstagram.com&amp;_nc_cat=1&amp;_nc_ohc=kjIl0Ux2i3wAX-8TLaW&amp;_nc_tp=24&amp;oh=65b49868f65ee5253e859e445f7c7c68&amp;oe=5FD58002" alt="" style="width:100%;"></a>
+        </div> -->
+        <script src="js/instafeed.min.js"></script>
+        
+        <div class="row">
+        <div id="instafeed">
+          
+        </div>
+        </div>
+        
+          
+          <script>
+            var feed = new Instafeed({
+              limit:4,
+              // template: '<a href="{{link}}"><img title="{{caption}}" src="{{image}}" class="img-fluid col-md-3" /></a>',
+              template: '<div class="col-3"><p><a href="{{link}}"><img src="{{image}}" target="_blank" class="img-fluid" style="text-align:center;"></a><p></div>',
+              accessToken: 'IGQVJXeTVFb0YweG9mbTFoTlBNZAmpSYjVUQ1FaZAmdOQ2p2X3Y5RDQ0THpEbE9jbTU0c3Q4QWV5ZAXNCTUVLZA2N1WFBXNWJKb0NMZAl9wX1hvM0JaRl9wcjVBSG5sTHJSQkpXdDdzYlVqa21fYno4LWs3cgZDZD'
+            });
+          feed.run();
+          </script>
+      
+        
 
           
           <div class="top-banner-text">
@@ -238,7 +284,7 @@
               </div>
               <div class="col-md-3 col-8 mobile-profile-image">
                 <img src="img/png-img008-staff03.png" alt="片山氏" class="img-fluid">
-                <p><img src="img/test-img.png" alt="" class="img-fluid"></p>
+                <!-- <p><img src="img/test-img.png" alt="" class="img-fluid"></p> -->
               </div>
             </div>
           <h5>TOKIO IEで、<br class="br_on">毎日サロンクオリティの<br class="br_on">ダメージケアが実現します！</h5>
@@ -458,7 +504,7 @@
   <div class="row">
     <div class="col-12">
     <img src="img/tokio_ie_inkarami200.png" alt="TOKIO IE INKARAMI Platinum | Premium | Head Spa" class="img-fluid">
-    </div>
+      </div>
   </div> 
   <div class="row" id="premium">
     <div class="platinum-banner col-12">
