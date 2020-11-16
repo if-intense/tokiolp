@@ -335,7 +335,8 @@ footer ul li a {
 }
 
 .inkarami_1_2 {
-  background:pink;
+  /* background:pink; */
+  background: url('../img/tokio_1_2.png');
   padding:40px 20px;
   font-family: はれのそら明朝, serif;
 }
@@ -379,7 +380,8 @@ footer ul li a {
   line-height: 3em;
   color:white;
   padding:8vh 0;
-  background:grey;
+  /* background:grey; */
+  background:url('../img/tokio_3_4.png');
   text-align:center;
   font-family: はれのそら明朝, serif;
 }
