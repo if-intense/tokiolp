@@ -803,10 +803,11 @@ footer ul li a {
 .subscription .limited-for-subscription-only .center {
   margin:0 auto;
   max-width:360px;
+  padding:35px;
 
 }
 
-.subscription .limited-for-subscription-only .center button {
+.subscription .limited-for-subscription-only .center a {
   width:65%;
   max-width: 360px;
   height: 48px;
@@ -815,6 +816,7 @@ footer ul li a {
   box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.45);
   color:#fff;
   margin-bottom:40px;
+  padding:20px;
 }
 
 
